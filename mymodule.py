@@ -3,7 +3,8 @@ import json
 
 api_key = 'xxxxx'
 
-def get_city_weather(city):
+
+def get_weather_of_city(city):
   sock = urlopen("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + api_key)
   
   result = sock.read()
@@ -14,3 +15,7 @@ def get_city_weather(city):
 if __name__ == "__main__"
   degrees = get_weather("OSLO")
   print("Weather in Oslo is %.2f degrees Celsius" % degrees)
+  
+  print("Let go home!!!!!!!!!!!!!"*10)
+  
+  
